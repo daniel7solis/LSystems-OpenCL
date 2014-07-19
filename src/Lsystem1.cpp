@@ -38,33 +38,34 @@ void leerCadena(){
 }
 void control(){
 	if(getXML()){
-		Productions P;
-		P.Prod();
-		for(int j=0; j<iteraciones; j++){
-			cout << "Pasada numero: " << j+1;
-			for(int i=0; i<input.length(); i++){
-				cout << "-------------------------------------" << endl;
-				cout << "Iteración: " << i << " para el simbolo -> " << input[i] << endl;
-				char a=input[i];
-				char *X=P.getProd(a);
-				if(X!=NULL){
-					cout << "Producción de " << input[i] << ":" << X << endl;
-					temp+=X;
-				}else{
-					cout << "Error" << endl;
-				}
-			}
-			cout << "Final de la cadena de la pasada " << j+1 << ": " << temp << endl;
-			input=temp;
-			temp="";
-		}
+		cout << "sisisissi" << endl;
+//		Productions P;
+//		P.Prod();
+//		for(int j=0; j<iteraciones; j++){
+//			cout << "Pasada numero: " << j+1;
+//			for(int i=0; i<input.length(); i++){
+//				cout << "-------------------------------------" << endl;
+//				cout << "Iteración: " << i << " para el simbolo -> " << input[i] << endl;
+//				char a=input[i];
+//				char *X=P.getProd(a);
+//				if(X!=NULL){
+//					cout << "Producción de " << input[i] << ":" << X << endl;
+//					temp+=X;
+//				}else{
+//					cout << "Error" << endl;
+//				}
+//			}
+//			cout << "Final de la cadena de la pasada " << j+1 << ": " << temp << endl;
+//			input=temp;
+//			temp="";
+//		}
 	}else{//fallo el managerXML
 
 	}
 }
 
 int main() {
-	leerCadena();
+//	leerCadena();
 	control();
 	return 0;
 }

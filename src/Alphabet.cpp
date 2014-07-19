@@ -16,10 +16,22 @@ using namespace std;
 Alphabet::Alphabet() {
 	// TODO Auto-generated constructor stub
 //	V[7]="CADENO";
+	cont=0;
 }
 
 Alphabet::~Alphabet() {
 	// TODO Auto-generated destructor stub
+}
+
+bool Alphabet::Alpha(int x){
+	V=new char[x];
+	return true;
+}
+
+bool Alphabet::setSym(char sym){
+	V[cont]=sym;
+	cont++;
+	cout << "setSym " << V[cont-1] << endl;
 }
 
 bool Alphabet::verifiSymbol(char *s){
