@@ -9,6 +9,7 @@
 #include "Alphabet.h"
 #include <iostream>
 #include <stdio.h>
+#include <string>
 
 using namespace std;
 
@@ -21,13 +22,17 @@ Axiom::~Axiom() {
 	// TODO Auto-generated destructor stub
 }
 
-bool Axiom::setAxiom(char sym,Alphabet pA){
-	temp[0]=sym;
-	temp[1]='\0';
+bool Axiom::setAxiom(std::string sym,Alphabet pA){
+//	temp[0]=sym;
+//	temp[1]='\0';
 //	cout << pA.verifiSymbol(temp) << endl;
-	if(pA.verifiSymbol(temp)){
+	if(pA.verifiSymbol(&sym[0])){
 		A=sym;
 		cout << "setAxiom" << A << endl;
 	}
+}
+
+std::string Axiom::getAxiom(){
+	return A;
 }
 

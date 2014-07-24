@@ -16,7 +16,7 @@
 
 class managerXML {
 private:
-	int x;//variable para saber la cantida de symbolos del alfabeto
+	int x;//variable para saber la cantida de symbolos del alfabeto, y la cantidad de rules de las producciones
 public:
 	Productions prod;
 	Alphabet alpha;
@@ -31,6 +31,8 @@ public:
 	bool getAxiom(xmlpp::Node* node);
 	bool getAlphabet(xmlpp::Node* node);
 	bool getProductions(xmlpp::Node* node);
+	bool getRules(xmlpp::Node* nodePar);
+	bool getRuleInside(xmlpp::Node* node,int from);
 	void getSymFromXML(xmlpp::Node* node,int from);
 };
 

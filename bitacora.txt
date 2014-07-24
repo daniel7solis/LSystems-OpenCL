@@ -1,0 +1,51 @@
+=============================================================================
+BITACORA DE TIEMPOS DE PROCESO Y TIEMPO DE EJECUCIÓN DEL CICLO DE CONTROL DEL
+PROYECTO "IMPLEMENTACIÓN DE SISTEMAS DE LINDENMAYER"
+=============================================================================
+Por Eloí Daniel Cruz Solís, Verano de Investigación Cientifica Delfin 2014
+=============================================================================
+*****************************************************************************
+*****************************************************************************
+***************************Inicio de la Bitacora*****************************
+-----------------------------------------------------------------------------
+Bitacora -> Tue Jul 22 16:25:38 2014
+Iteraciones -> 156
+Tiempo de procesamiento en segundos -> Inicio: 0,02 Fin: 0,05
+Total de segundos de procesamiento: 0,03
+Tiempo de ejecución en segundos -> Inicio: 1.406.064.338 Fin: 1.406.064.339
+Total de segundos transcurridos desde el comienzo del ciclo: 1
+-----------------------------------------------------------------------------
+Bitacora -> Tue Jul 22 16:32:56 2014
+Iteraciones -> 2
+Tiempo de procesamiento en segundos -> Inicio: 0,03 Fin: 0,03
+Total de segundos de procesamiento: 0
+Tiempo de ejecución en segundos -> Inicio: 1.406.064.776 Fin: 1.406.064.776
+Total de segundos transcurridos desde el comienzo del ciclo: 0
+-----------------------------------------------------------------------------
+Bitacora -> Tue Jul 22 16:34:07 2014
+Iteraciones -> 5
+Tiempo de procesamiento en segundos -> Inicio: 0,03 Fin: 0,04
+Total de segundos de procesamiento: 0,01
+Tiempo de ejecución en segundos -> Inicio: 1.406.064.847 Fin: 1.406.064.847
+Total de segundos transcurridos desde el comienzo del ciclo: 0
+-----------------------------------------------------------------------------
+Bitacora -> Tue Jul 22 16:38:04 2014
+Iteraciones -> 10
+Tiempo de procesamiento en segundos -> Inicio: 0,03 Fin: 9,65
+Total de segundos de procesamiento: 9,62
+Tiempo de ejecución en segundos -> Inicio: 1.406.065.084 Fin: 1.406.065.180
+Total de segundos transcurridos desde el comienzo del ciclo: 96
+-----------------------------------------------------------------------------
+Bitacora -> Thu Jul 24 14:39:06 2014
+Iteraciones -> 10
+Tiempo de procesamiento en segundos -> Inicio: 0,03 Fin: 10,49
+Total de segundos de procesamiento: 10,46
+Tiempo de ejecución en segundos -> Inicio: 1.406.230.746 Fin: 1.406.230.920
+Total de segundos transcurridos desde el comienzo del ciclo: 174
+-----------------------------------------------------------------------------
+Bitacora -> Thu Jul 24 14:43:46 2014
+Iteraciones -> 5
+Tiempo de procesamiento en segundos -> Inicio: 0,03 Fin: 0,03
+Total de segundos de procesamiento: 0
+Tiempo de ejecución en segundos -> Inicio: 1.406.231.026 Fin: 1.406.231.026
+Total de segundos transcurridos desde el comienzo del ciclo: 0

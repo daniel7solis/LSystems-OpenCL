@@ -6,6 +6,7 @@
  */
 
 #include "ObjChar.h"
+#include <string>
 
 ObjChar::ObjChar() {
 	// TODO Auto-generated constructor stub
@@ -15,10 +16,10 @@ ObjChar::~ObjChar() {
 	// TODO Auto-generated destructor stub
 }
 
-void ObjChar::create(char *arr){
-	arreglo=arr;
+void ObjChar::create(std::string a){
+	arreglo=a;
 }
-char* ObjChar::get(){
+std::string ObjChar::get(){
 	return arreglo;
 }
 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simulation>
+
+  <l-system>
+
+    <alphabet>
+      <!-- An unlimited set of symbols -->
+      <!-- type="" might be parametric. -->
+      <symbol type="id">A</symbol>
+      <symbol>B</symbol>
+      <symbol>C</symbol>
+      <symbol>+</symbol>
+      <symbol>-</symbol>
+      <symbol>[</symbol>
+      <symbol>]</symbol>
+    </alphabet>
+
+    <axiom>C</axiom>
+
+    <endomorphisms>
+      <rule>
+        <predecessor>C</predecessor>
+        <successor>A[B]</successor>
+        <condition><!-- Useful for rules that aren't DOL. --></condition>
+      </rule>
+      <rule>
+        <predecessor>B</predecessor>
+        <successor>C+</successor>
+        <condition><!-- Useful for rules that aren't DOL. --></condition>
+      </rule>
+      <rule>
+        <predecessor>A</predecessor>
+        <successor>AAAABBB</successor>
+        <condition><!-- Useful for rules that aren't DOL. --></condition>
+      </rule>
+      <rule>
+        <predecessor>[</predecessor>
+        <successor>[+B-B]</successor>
+        <condition><!-- Useful for rules that aren't DOL. --></condition>
+      </rule>
+    </endomorphisms>
+
+  </l-system>
+  
+  <!-- Other <l-system> might be specified here. -->
+  
+</simulation>

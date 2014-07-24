@@ -8,13 +8,15 @@
 #ifndef OBJCHAR_H_
 #define OBJCHAR_H_
 
+#include <string>
+
 class ObjChar {
 public:
-	char *arreglo;
+	std::string arreglo;
 	ObjChar();
 	virtual ~ObjChar();
-	void create(char a[]);
-	char* get();
+	void create(std::string a);
+	std::string get();
 };
 
 #endif /* PROD_H_ */

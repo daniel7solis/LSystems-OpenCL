@@ -9,15 +9,17 @@
 #define AXIOM_H_
 
 #include "Alphabet.h"
+#include <string>
 
 class Axiom {
 public:
-	char A;
+	std::string A;
 //	Alphabet alpha;
 	char temp[2];
 	Axiom();
 	virtual ~Axiom();
-	bool setAxiom(char sym,Alphabet pA);
+	bool setAxiom(std::string sym,Alphabet pA);
+	std::string getAxiom();
 };
 
 #endif /* AXIOM_H_ */
