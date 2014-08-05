@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <simulation>
 
-  <l-system>
+  <l-system id="Sistema_de_4Prod">
 
     <alphabet>
       <!-- An unlimited set of symbols -->
@@ -43,5 +43,5 @@
   </l-system>
   
   <!-- Other <l-system> might be specified here. -->
-  
+    
 </simulation>

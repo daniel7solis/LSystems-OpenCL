@@ -92,7 +92,7 @@ src/Lsystem1.d: ../src/Lsystem1.cpp ../src/Lsystem1.h ../src/managerXML.h \
  /usr/local/include/libxml++-2.6/libxml++/schema.h \
  /usr/include/glibmm-2.4/glibmm/convert.h \
  /usr/include/glibmm-2.4/glibmm/error.h \
- /usr/include/glibmm-2.4/glibmm/exception.h
+ /usr/include/glibmm-2.4/glibmm/exception.h ../src/OpenCLSetUp.h
 
 ../src/Lsystem1.h:
 
@@ -317,3 +317,5 @@ src/Lsystem1.d: ../src/Lsystem1.cpp ../src/Lsystem1.h ../src/managerXML.h \
 /usr/include/glibmm-2.4/glibmm/error.h:
 
 /usr/include/glibmm-2.4/glibmm/exception.h:
+
+../src/OpenCLSetUp.h:

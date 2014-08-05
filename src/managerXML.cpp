@@ -24,24 +24,32 @@ managerXML::managerXML() {
 	// Set the global C++ locale to the user-configured locale,
 	// so we can use std::cout with UTF-8, via Glib::ustring, without exceptions.
 	std::locale::global(std::locale(""));
-	filePath="/home/dani/workspace/Lsystem1/src/ejemplo.xml";
+	//Ruta para el archivo XML que contiene el L-System
+	//filePath=path+"ejemplo.xml";
 }
 
 managerXML::~managerXML() {
 	// TODO Auto-generated destructor stub
 }
 
-bool managerXML::beginParser(){
-	bool final=false;
+bool managerXML::beginParser(string filePath){
+	bool final=false;//variable para controlar los errores y en caso de existir se detiene el programa
 	try{
+		//Se crea un objeto tipo DomParser
 		xmlpp::DomParser parser;
-		parser.parse_file(filePath);//parsea un archivo xml
+		/*Iniciamos el objeto pasando la ruta del archivo a leer*/
+		parser.parse_file(filePath+"ejemplo.xml");//parsea un archivo xml
+		/*Obtiene el nodo raiz del archivo*/
 		xmlpp::Node* pNode = parser.get_document()->get_root_node();
 		xmlpp::Node* NodeRet;
 		cout << "Nodo raiz: " << (pNode->get_name()) << endl;
 //		Parser(pNode);
+		/*Obtenemos los nodos hijos del nodo raiz*/
 		xmlpp::Node::NodeList hijos = pNode->get_children();
+		/*Se comienza el analisis en cada nodo hijo, ya que a ese nivel se encuentran
+		 * los sistemas de Lindenmayer*/
 		for(xmlpp::Node::NodeList::iterator iter = hijos.begin(); iter != hijos.end(); ++iter){//
+			/*El método Parser se encarga de comenza ra analizar cada nodo hijo del nodo raíz*/
 			final=Parser(*iter);
 //			cout << "1 -> " << NodeRet->get_name() << endl;
 		}
@@ -53,36 +61,38 @@ bool managerXML::beginParser(){
 }
 
 bool managerXML::Parser(xmlpp::Node* node){
-	bool final=false;
+	bool final=false;//variable para controlar los errores y en caso de existir se detiene el programa
+	/*Se crean objetos de los 3 posibles tipos que puede ser el nodo, hay nodos con contenido (más nodos)
+	 * nodos con contenido (texto dentro de el) y
+	 * nodos de comentarios*/
 	const xmlpp::ContentNode* nodeContent = dynamic_cast<const xmlpp::ContentNode*>(node);
 	const xmlpp::TextNode* nodeText = dynamic_cast<const xmlpp::TextNode*>(node);
 	const xmlpp::CommentNode* nodeComment = dynamic_cast<const xmlpp::CommentNode*>(node);
 	if(nodeText && (nodeText->is_white_space())){
-		/*ignoramos los espacios en blanco, si es espacio en blanco no se debe desarrollar
+		/*Como el Parser detecta espacios y lineas ignoramos los espacios en blanco, si es
+		 * espacio en blanco no se debe desarrollar
 		 * el proceso de analisis de esa parte del archivo xml; si no lo es entonces
 		 * si se debe desarrollar el analisis*/
 		final=true;
 	}else{
 		/*Este es el proceso de analisis del archivo XML, parte por parte*/
-		if(!nodeText && !nodeComment){//No se quiere que se imprima los nodos que son TEXT ó COMMENT
-//			return node;
+		/*Se verifica el tipo de nodo, ya que en cualquier nivel podemos
+		 * encontrar nodos de contenido o nodos de comentario*/
+		if(!nodeText && !nodeComment){//SI NO SON TEXT ó COMMENT
 			cout << "1 -> " << (node->get_name()) << endl;//AQUI PODEMOS LLAMAR A SEMANTICO
+			/*Si el nombre del nodo correponde a l-system, por lo tanto encontramos
+			 * un sistema de lindenmayer definido*/
 			if((node->get_name()).compare("l-system")==0){
+				/*Mando llamar al método semantico que se encarga de
+				 * revisar que el sistema de Lindenmayer que se encontro,
+				 * cuente con la estructura basica, la estructura basica
+				 * debe contar con un conjunto de simbolos llamado
+				 * alfabeto, un simbolo inicial que debe estar dentro
+				 * del alfabeto y un conjunto de reglas de producción*/
 				final=semantico(node);
 			}
-//			if(nodeContent){
-//				cout << "Tiene contenido" << nodeContent->get_content() << endl;
-//			}
-//			if(nodeComment){
-//				cout << "El comentario" << nodeComment->get_content() << endl;
-//			}
-//			if(!nodeContent){
-//				xmlpp::Node::NodeList hijos = node->get_children();
-//				for(xmlpp::Node::NodeList::iterator iter = hijos.begin(); iter != hijos.end(); ++iter){//
-//					Parser(*iter);
-//				}
-//			}
 		}
+		/*Fin de busqueda de nodos l-system*/
 
 		/*Ahora verifiquemos el contenido de los diferentes tipos de nodos*/
 		if(nodeText){
@@ -97,6 +107,7 @@ bool managerXML::Parser(xmlpp::Node* node){
 			for(xmlpp::Element::AttributeList::const_iterator att=atributos.begin(); att!=atributos.end(); att++){
 				xmlpp::Attribute* at=*att;
 				cout << "1 -> " << "Atributo: " << at->get_name() << " = " << at->get_value() << endl;
+				nameSystem=at->get_value();
 			}
 		}
 	}
@@ -112,7 +123,8 @@ bool managerXML::semantico(xmlpp::Node* nodePar){
 		const xmlpp::TextNode* nodeText = dynamic_cast<const xmlpp::TextNode*>(node);
 		const xmlpp::CommentNode* nodeComment = dynamic_cast<const xmlpp::CommentNode*>(node);
 		if(nodeText && (nodeText->is_white_space())){
-			/*ignoramos los espacios en blanco, si es espacio en blanco no se debe desarrollar
+			/*Como el Parser detecta espacios y lineas ignoramos los espacios en blanco, si es
+			 * espacio en blanco no se debe desarrollar
 			 * el proceso de analisis de esa parte del archivo xml; si no lo es entonces
 			 * si se debe desarrollar el analisis*/
 		}else{

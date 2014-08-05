@@ -30,9 +30,9 @@ bool Productions::Prod(int filas){
 	col=new int(2);
 	int i;
 	/*Creo la matriz de objetos*/
-	P=new ObjChar*[*fil];//Creo un puntero de un vector de punteros a objetos ObjChar
+	P=new string*[*fil];//Creo un puntero de un vector de punteros a objetos ObjChar
 	for(i=0; i<*fil; i++){
-		P[i]=new ObjChar[*col];//A cada puntero del vector hacer que apunte a un vector de objetos
+		P[i]=new string[*col];//A cada puntero del vector hacer que apunte a un vector de objetos
 	}
 
 	/*imprimo la matriz*/
@@ -107,17 +107,19 @@ bool Productions::Prod(int filas){
 
 /*Función que inserta dentro de las producciones el PREDECESSOR=0,SUCCESSOR=1,CONDITION=3*/
 void Productions::setProd(string text,int from){
-	char *p=&text[0];
+//	char *p=&text[0];
 	if(from==0){//si es cero, se debe insertar el predecessor a una posición izq de la matriz de prod
-		cout << "Insertar el predecessor-> " << p << endl;
-		obj.create(&text[0]);//con el obj apunto al array
-		P[cont][0]=obj;//almaceno el la referencia al obj
-		cout << ".P-> " << P[cont][0].get() << endl;
+		cout << "Insertar el predecessor-> " << text << endl;
+//		obj.create(&text[0]);//con el obj apunto al array
+		P[cont][0]=text;//almaceno el la referencia al obj
+		cout << ".P-> " << P[cont][0] << endl;
+//		cout << ".P-> " << P[cont][0].get() << endl;
 	}else if(from==1){//Si es 1, se debe insertar el successor a la posición derecha de la matriz de prod
-		cout << "Insertar el successor-> " << p << endl;
-		obj.create(p);//con el obj apunto al array
-		P[cont][1]=obj;//almaceno el la referencia al obj
-		cout << ".P-> " << P[cont][1].get() << endl;
+		cout << "Insertar el successor-> " << text << endl;
+//		obj.create(p);//con el obj apunto al array
+		P[cont][1]=text;//almaceno el la referencia al obj
+		cout << ".P-> " << P[cont][1] << endl;
+//		cout << ".P-> " << P[cont][1].get() << endl;
 		cont++;//Incremento el contador porque esta produccion termino
 	}
 }
@@ -125,7 +127,8 @@ void Productions::setProd(string text,int from){
 void Productions::print(){
 	for(int i=0; i<2; i++){
 		for(int j=0; j<2; j++){
-			cout << "Z=" << P[i][j].get() << endl;
+			cout << "Z=" << P[i][j] << endl;
+//			cout << "Z=" << P[i][j].get() << endl;
 		}
 	}
 }
@@ -145,9 +148,12 @@ std::string Productions::getProd(char *f,Alphabet V){
 		for(int i=0; i<*fil; i++){
 			//		cout << i<<" "<< P[i][0].get() << f  << strcmp(P[i][0].get(),&f) <<endl;
 //			cout << "Prod" << P[i][0].get() << &f << endl;
-			if((P[i][0].get()).compare(d)==0){//Comparo el token con cada simbolo "a" de P es a -> X
-				return P[i][1].get();//Si encontre el token dentro de las producciones, mando la producción que le corresponde
+			if((P[i][0]).compare(d)==0){//Comparo el token con cada simbolo "a" de P es a -> X
+				return P[i][1];//Si encontre el token dentro de las producciones, mando la producción que le corresponde
 			}
+//			if((P[i][0].get()).compare(d)==0){//Comparo el token con cada simbolo "a" de P es a -> X
+//				return P[i][1].get();//Si encontre el token dentro de las producciones, mando la producción que le corresponde
+//			}
 		}
 	}//strcmp(P[i][0].get(),&f)==0
 	return "";//Si no lo encontre mando Null

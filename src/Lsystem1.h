@@ -4,6 +4,12 @@
 #include <string.h>
 #include "managerXML.h"
 
+/*Headers para OpenCl*/
+#include <utility>
+#define __NO_STD_VECTOR // Use cl::vector instead of STL version
+#include <CL/cl.h>
+/**/
+
 class Lsystem1 {
 private:
 

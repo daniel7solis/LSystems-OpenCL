@@ -8,6 +8,7 @@ CPP_SRCS += \
 ../src/Axiom.cpp \
 ../src/Lsystem1.cpp \
 ../src/ObjChar.cpp \
+../src/OpenCLSetUp.cpp \
 ../src/Productions.cpp \
 ../src/managerXML.cpp 
 
@@ -16,6 +17,7 @@ OBJS += \
 ./src/Axiom.o \
 ./src/Lsystem1.o \
 ./src/ObjChar.o \
+./src/OpenCLSetUp.o \
 ./src/Productions.o \
 ./src/managerXML.o 
 
@@ -24,6 +26,7 @@ CPP_DEPS += \
 ./src/Axiom.d \
 ./src/Lsystem1.d \
 ./src/ObjChar.d \
+./src/OpenCLSetUp.d \
 ./src/Productions.d \
 ./src/managerXML.d 
 

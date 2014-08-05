@@ -1,0 +1,146 @@
+=============================================================================
+BITACORA DE TIEMPOS DE PROCESO Y TIEMPO DE EJECUCIÓN DEL CICLO DE CONTROL DEL
+   PROYECTO "IMPLEMENTACIÓN DE SISTEMAS DE LINDENMAYER" CON PROCESAMIENTO 
+                           PARALELO USANDO OPENCL
+=============================================================================
+Por Eloí Daniel Cruz Solís, Verano de Investigación Cientifica Delfin 2014
+=============================================================================
+*****************************************************************************
+*****************************************************************************
+***************************Inicio de la Bitacora*****************************
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 10:57:15 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 2
+Tiempo de procesamiento en segundos -> Inicio: 0,05 Fin: 0,28
+Total de segundos de procesamiento: 0,23
+Tiempo de ejecución en segundos -> Inicio: 1.407.167.835 Fin: 1.407.167.835
+Total de segundos transcurridos desde el comienzo del ciclo: 0
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 11:17:20 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 2
+Tiempo de procesamiento en segundos -> Inicio: 0,05 Fin: 0,28
+Total de segundos de procesamiento: 0,23
+Tiempo de ejecución en segundos -> Inicio: 1.407.169.040 Fin: 1.407.169.041
+Total de segundos transcurridos desde el comienzo del ciclo: 1
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 11:27:02 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 2
+Tiempo de procesamiento en segundos -> Inicio: 0,05 Fin: 0,29
+Total de segundos de procesamiento: 0,24
+Tiempo de ejecución en segundos -> Inicio: 1.407.169.622 Fin: 1.407.169.623
+Total de segundos transcurridos desde el comienzo del ciclo: 1
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 11:41:46 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 2
+Tiempo de procesamiento en segundos -> Inicio: 0,05 Fin: 0,29
+Total de segundos de procesamiento: 0,24
+Tiempo de ejecución en segundos -> Inicio: 1.407.170.506 Fin: 1.407.170.507
+Total de segundos transcurridos desde el comienzo del ciclo: 1
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 11:50:49 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 2
+Tiempo de procesamiento en segundos -> Inicio: 0,06 Fin: 0,31
+Total de segundos de procesamiento: 0,25
+Tiempo de ejecución en segundos -> Inicio: 1.407.171.049 Fin: 1.407.171.050
+Total de segundos transcurridos desde el comienzo del ciclo: 1
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 12:14:19 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 2
+Tiempo de procesamiento en segundos -> Inicio: 0,06 Fin: 0,3
+Total de segundos de procesamiento: 0,24
+Tiempo de ejecución en segundos -> Inicio: 1.407.172.459 Fin: 1.407.172.460
+Total de segundos transcurridos desde el comienzo del ciclo: 1
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 12:34:06 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 2
+Tiempo de procesamiento en segundos -> Inicio: 0,05 Fin: 0,29
+Total de segundos de procesamiento: 0,24
+Tiempo de ejecución en segundos -> Inicio: 1.407.173.646 Fin: 1.407.173.647
+Total de segundos transcurridos desde el comienzo del ciclo: 1
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 13:14:58 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 1
+Tiempo de procesamiento en segundos -> Inicio: 0,05 Fin: 0,2
+Total de segundos de procesamiento: 0,15
+Tiempo de ejecución en segundos -> Inicio: 1.407.176.098 Fin: 1.407.176.099
+Total de segundos transcurridos desde el comienzo del ciclo: 1
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 13:24:44 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 2
+Tiempo de procesamiento en segundos -> Inicio: 0,06 Fin: 0,3
+Total de segundos de procesamiento: 0,24
+Tiempo de ejecución en segundos -> Inicio: 1.407.176.684 Fin: 1.407.176.685
+Total de segundos transcurridos desde el comienzo del ciclo: 1
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 14:31:40 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 2
+Tiempo de procesamiento en segundos -> Inicio: 0,06 Fin: 0,3
+Total de segundos de procesamiento: 0,24
+Tiempo de ejecución en segundos -> Inicio: 1.407.180.700 Fin: 1.407.180.701
+Total de segundos transcurridos desde el comienzo del ciclo: 1
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 14:31:49 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 3
+Tiempo de procesamiento en segundos -> Inicio: 0,06 Fin: 0,4
+Total de segundos de procesamiento: 0,34
+Tiempo de ejecución en segundos -> Inicio: 1.407.180.709 Fin: 1.407.180.710
+Total de segundos transcurridos desde el comienzo del ciclo: 1
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 14:32:02 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 5
+Tiempo de procesamiento en segundos -> Inicio: 0,05 Fin: 0,64
+Total de segundos de procesamiento: 0,59
+Tiempo de ejecución en segundos -> Inicio: 1.407.180.722 Fin: 1.407.180.725
+Total de segundos transcurridos desde el comienzo del ciclo: 3
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 14:35:38 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 10
+Tiempo de procesamiento en segundos -> Inicio: 0,05 Fin: 22,08
+Total de segundos de procesamiento: 22,03
+Tiempo de ejecución en segundos -> Inicio: 1.407.180.938 Fin: 1.407.181.133
+Total de segundos transcurridos desde el comienzo del ciclo: 195
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 14:43:36 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 2
+Tiempo de procesamiento en segundos -> Inicio: 0,06 Fin: 0,3
+Total de segundos de procesamiento: 0,24
+Tiempo de ejecución en segundos -> Inicio: 1.407.181.416 Fin: 1.407.181.417
+Total de segundos transcurridos desde el comienzo del ciclo: 1
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 14:44:31 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 12
+Tiempo de procesamiento en segundos -> Inicio: 0,06 Fin: 13,66
+Total de segundos de procesamiento: 13,6
+Tiempo de ejecución en segundos -> Inicio: 1.407.181.471 Fin: 1.407.181.587
+Total de segundos transcurridos desde el comienzo del ciclo: 116
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 14:53:28 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 13
+Tiempo de procesamiento en segundos -> Inicio: 0,06 Fin: 52,42
+Total de segundos de procesamiento: 52,36
+Tiempo de ejecución en segundos -> Inicio: 1.407.182.008 Fin: 1.407.182.402
+Total de segundos transcurridos desde el comienzo del ciclo: 394
+-----------------------------------------------------------------------------
+Bitacora -> Mon Aug  4 15:24:28 2014
+L-System -> Sistema_de_4Prod
+Iteraciones -> 14
+Tiempo de procesamiento en segundos -> Inicio: 0,07 Fin: 214,52
+Total de segundos de procesamiento: 214,45
+Tiempo de ejecución en segundos -> Inicio: 1.407.183.868 Fin: 1.407.185.483
+Total de segundos transcurridos desde el comienzo del ciclo: 1.615

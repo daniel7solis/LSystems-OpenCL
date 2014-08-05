@@ -15,8 +15,10 @@
 class Productions {
 public:
 	int *fil,*col,cont;
-	ObjChar **P;
+	std::string **P;
 	ObjChar obj;//creo el objeto donde almacenaré el array de caracteres
+//	ObjChar **P;
+//	ObjChar obj;//creo el objeto donde almacenaré el array de caracteres
 	Productions();
 	virtual ~Productions();
 	bool Prod(int filas);
